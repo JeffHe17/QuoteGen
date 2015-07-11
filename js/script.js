@@ -5,8 +5,10 @@
 var sadQuotes = ["a", "b", "c", "d", "e"]; 
 var boredQuotes = ["a", "b", "c", "d", "e"];
 
+//Prevents repeats
 var usedSad = [];
 var usedBored = [];
+
 //Generates sad Quotes
 function sad(){
 	var index = random(0, sadQuotes.length - 1);
@@ -15,6 +17,11 @@ function sad(){
 	if(usedSad.length == sadQuotes.length){
 		usedSad = [];
 	}
+
+	if (usedSad.includes(index)){
+		sad();
+	}
+	alert(sadQuotes[index]);
 	return sadQuotes[index];
 }
 
@@ -27,6 +34,11 @@ function bored(){
 	if(usedBored.length == boredQuotes.length){
 		usedBored = [];
 	}
+
+	if (usedBored.includes(index)){
+		bored();
+	}
+	alert(boredQuotes[index]);
 	return boredQuotes[index];
 }
 
