@@ -18,6 +18,9 @@ function sad(){
 		usedSad = [];
 	}
 
+	if (usedSad.includes(index)){
+		sad();
+	}
 	alert(sadQuotes[index]);
 	return sadQuotes[index];
 }
@@ -32,6 +35,9 @@ function bored(){
 		usedBored = [];
 	}
 
+	if (usedBored.includes(index)){
+		bored();
+	}
 	alert(boredQuotes[index]);
 	return boredQuotes[index];
 }
