@@ -1,1 +1,18 @@
-/* CSS */
+h2 {
+	font-size: 50px;
+	display: block;
+	color: blue;
+}
+
+button {
+	color: green;
+	display: inline-block
+
+}
+
+#result {
+
+	color: black;
+	font-family: bold;
+	font-size: 35px
+}
