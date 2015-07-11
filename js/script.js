@@ -2,8 +2,8 @@
 
 
 //Collection of quotes
-var sadQuotes = ["a", "b", "c", "d", "e"]; 
-var boredQuotes = ["a", "b", "c", "d", "e"];
+var sadQuotes = ["a", "b", "c", "d", "e", "f"]; 
+var boredQuotes = ["a", "b", "c", "d", "e", "f"];
 
 //Prevents repeats
 var usedSad = [];
