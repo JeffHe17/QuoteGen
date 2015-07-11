@@ -9,8 +9,11 @@ var boredQuotes = ["a", "b", "c", "d", "e"];
 var usedSad = [];
 var usedBored = [];
 
+
 //Generates sad Quotes
 function sad(){
+	var result = document.getElementById("result");
+	result.innerHTML = " ";
 	var index = random(0, sadQuotes.length - 1);
 
 	if(usedSad.length == sadQuotes.length){
@@ -18,6 +21,9 @@ function sad(){
 	}
 
 	if (usedSad.indexOf(index) == -1){
+
+		result.innerHTML = result.innerHTML + sadQuotes[index];
+
 		usedSad.push(index);
 		return sadQuotes[index];
 	} else {
@@ -29,6 +35,8 @@ function sad(){
 
 //Generates bored Quotes
 function bored(){
+	var result = document.getElementById("result");
+	result.innerHTML = " ";
 	var index = random(0, boredQuotes.length - 1);
 	
 	if(usedBored.length == boredQuotes.length){
@@ -36,6 +44,7 @@ function bored(){
 	}
 
 	if (usedBored.indexOf(index) == -1){
+		result.innerHTML = result.innerHTML + boredQuotes[index];
 		usedBored.push(index);
 		return boredQuotes[index];
 	} else {
