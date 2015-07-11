@@ -17,6 +17,8 @@ function sad(){
 	if(usedSad.length == sadQuotes.length){
 		usedSad = [];
 	}
+
+	alert(sadQuotes[index]);
 	return sadQuotes[index];
 }
 
@@ -29,6 +31,8 @@ function bored(){
 	if(usedBored.length == boredQuotes.length){
 		usedBored = [];
 	}
+
+	alert(boredQuotes[index]);
 	return boredQuotes[index];
 }
 
