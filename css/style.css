@@ -4,24 +4,19 @@ h2 {
 	color: purple;
 }
 
-button {
-	
-	display: inline-block
-	
-}
 
 #sad {
 	width: 200px;
 	height: 100px;
-	font-size: 80px;
-	color: blue;
+	font-size: 60px;
+	color: green;
 }
 
 #bored {
-	width: 250px;
+	width: 200px;
 	height: 100px;
-	font-size: 80px;
-	color:maroon;
+	font-size: 60px;
+	color:black;
 }
 #result {
 
